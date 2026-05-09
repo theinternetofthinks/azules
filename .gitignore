@@ -1,0 +1,50 @@
+# ============================================
+#   PrestaShop 9 – Proyecto Azules de Vergara
+# ============================================
+
+# --- PrestaShop core cache ---
+/var/cache/
+/var/logs/
+/var/sessions/
+
+# --- Symfony cache ---
+/app/var/
+/app/logs/
+
+# --- Composer ---
+/vendor/
+/composer.lock
+
+# --- Node / Frontend ---
+/node_modules/
+/package-lock.json
+/yarn.lock
+/.pnp/
+/.pnp.js
+
+# --- Assets compilados ---
+/public/build/
+/public/assets/
+/themes/*/assets/cache/
+/themes/*/assets/css/*.map
+/themes/*/assets/js/*.map
+
+# --- PrestaShop modules generados ---
+/modules/*/vendor/
+/modules/*/node_modules/
+/modules/*/composer.lock
+/modules/*/package-lock.json
+
+# --- Tu tema azules ---
+/themes/azules/node_modules/
+/themes/azules/package-lock.json
+/themes/azules/vendor/
+/themes/azules/cache/
+/themes/azules/dist/
+
+# --- Imágenes temporales ---
+/img/tmp/
+/img/tmp/*
+
+# --- Archivos de subida ---
+/

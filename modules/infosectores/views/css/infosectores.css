@@ -1,0 +1,16 @@
+.infosectores-banner {
+    text-align: center;
+}
+.infosectores-banner p{
+    max-width: 764px;
+}
+.infosectores-banner h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.infosectores-banner img {
+    margin-bottom: 16px;
+    width: 100%;
+}

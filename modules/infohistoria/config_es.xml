@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>infohistoria</name>
+    <displayName><![CDATA[Info Historia]]></displayName>
+    <version><![CDATA[1.0.0]]></version>
+    <description><![CDATA[Muestra la historia de Azules de Vergara.]]></description>
+    <author><![CDATA[Marcos]]></author>
+    <tab><![CDATA[front_office_features]]></tab>
+    <is_configurable>0</is_configurable>
+    <need_instance>0</need_instance>
+</module>

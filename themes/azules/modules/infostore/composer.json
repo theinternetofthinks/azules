@@ -1,0 +1,12 @@
+{
+  "name": "marcos/infostore",
+  "description": "Banner superior para PrestaShop 9",
+  "type": "prestashop-module",
+  "license": "AFL-3.0",
+  "autoload": {
+    "classmap": ["infostore.php"]
+  },
+  "extra": {
+    "legacy": true
+  }
+}

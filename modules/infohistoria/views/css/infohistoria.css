@@ -1,0 +1,21 @@
+.infohistoria-banner {
+    background: #F3F6F9;
+
+}
+.infohistoria-banner .inner-container {
+    max-width: 1440px;
+    display: flex;
+    padding: 96px 64px;
+    gap: 8px;  
+}
+.infohistoria-banner .col {
+    width: 100%;
+}
+.infohistoria-banner sup{
+    text-transform: uppercase;
+    font-size: 12px;
+}
+.infosectores-banner h2 {
+    font-size: 40px;
+
+}

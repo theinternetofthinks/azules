@@ -1,0 +1,204 @@
+/* Tipografía global */
+body {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #6B7480;
+  background: #FBFDFF;
+  font-weight: 300;
+}
+#wrapper {
+    background: #FBFDFF;
+}
+/* Títulos */
+h1, h2, h3, h4, h5 {
+  font-family: 'PT Serif', serif;
+  font-weight: 400;
+  color: #0B1B2B;
+}
+
+.title-section {
+  font-size: 40px;
+}
+/* Menu & Header*/
+#header {
+  background: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+#header .header-top .menu {
+  padding-left: 0;
+}
+.top-menu a {
+  padding: 0 10px!important;
+  font-weight: 400!important;
+}
+#header .header-top .top-menu a {
+  color:#0B1B2B;
+  text-decoration: none;
+  font-size: 14px;
+
+}
+@media (min-width: 1200px) { 
+  .header-top .container {
+    width: 1440px;
+    max-width: 100%;
+  }
+}
+#header .logo {
+  max-width: 120px;
+}
+#header .header-top .top-menu a:hover {
+  color:#0B1B2B;
+}
+.header-top #search_widget input {
+  background: none;
+  border: 1px solid #0B1B2B;
+  padding: 5px 5px 5px 40px;
+}
+#_desktop_contact_link {
+  display: none;
+}
+.blockcart span.hidden-sm-down,
+.user-info span{
+  display: none;
+}
+.header-top-right {
+  display: flex;
+  align-items: start;
+  justify-content: right;
+  width: 100%;
+}
+.header-top-right  .menu-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.user-nav {
+  display: flex;
+  gap: 8px;
+  width: 23%;
+  max-width: 80px;
+}
+.search-widgets {
+  margin-right: 10px;
+}
+.search-widgets,
+.menu {
+  width: 100%;
+  max-width: initial;
+}
+/* Enlaces */
+a {
+  color: #0B1B2B;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Contenedor principal */
+#wrapper {
+  padding-top: 0;
+}
+#content-wrapper .inner-container,
+#content-wrapper .container {
+  max-width: 1440px;
+  margin: auto;
+  padding: 96px 64px;
+}
+.page-index #content-wrapper .container {
+  max-width: initial;
+  width: 100%;
+}
+
+#wrapper #notifications + .container {
+    max-width: initial;
+    width: 100%;
+}
+/* Carrusel home */
+.carousel .carousel-inner {
+    height: auto;
+}
+.carousel .carousel-item figure img,
+.carousel .carousel-item figure {
+    width: 100%;
+}
+/* carousel */
+.carousel .carousel-inner {
+    height: auto;
+    max-height: 70vh;
+}
+.carousel .carousel-item figure img, .carousel .carousel-item figure {
+    width: auto;
+    object-fit: fill;
+}
+.carousel .carousel-item .caption {
+    position: absolute;
+    bottom: 0;
+    left: 90px;
+    max-width: 360px;
+    color: #fff;
+    top: 0;
+    margin: auto;
+    display: block;
+    height: 300px;
+}
+.carousel .carousel-item .caption .caption-description .page-content.page-cms ul, .carousel .carousel-item .caption .caption-description p, .page-content.page-cms .carousel .carousel-item .caption .caption-description ul {
+  color: #6B7480;
+  font-size: 18px;
+}
+.carousel .carousel-item .caption h2{
+    font-size: 46px!important;
+    font-weight: 300!important;
+    text-transform: none !important;
+}
+/* notificaciones */
+.notifications-container.container {
+    padding: 0;
+}
+
+
+/*displays*/
+.d-flex,
+.display-flex {
+    display: flex;
+    gap: 8px;
+
+}
+
+.header-component {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-direction: column;
+    margin-bottom: 48px;
+}
+.header-component h2 {
+  font-size: 40px;
+}
+
+/* Info banner */
+.infostore-banner {
+  width: 100%;
+  text-align: center;
+  padding: 4px 16px;
+  background: #000;
+  color: #ffffff;
+  text-transform:uppercase;
+}
+.infostore-banner p{
+  font-size: 12px;
+  margin-bottom:0;
+}
+
+/* productos destacados */
+.featured-products .products {
+  display: flex;
+  width: 100%;
+  gap:8px;
+  align-items: center;
+  justify-content: center;
+}

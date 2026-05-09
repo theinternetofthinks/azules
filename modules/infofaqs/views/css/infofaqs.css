@@ -1,0 +1,50 @@
+.infofaqs-banner ul {
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.faq-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s ease;
+}
+.faq-item h3 {
+    width: 100%;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 0;
+}
+.faq-item:before {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    content: '+';
+    right: 0;
+    top: 19px;
+    background: #F3F6F9;
+    display: block;
+    border-radius: 50%;
+    font-size: 24px;
+    font-weight: 100;
+    text-align: center;
+    line-height: 25px;
+}
+.faq-item.active:before {
+    content: '-';
+}
+.faq-item.active .faq-content {
+    max-height: 1000px; 
+}
+.faq-content p {
+    margin-bottom: 0;
+    padding: 16px 0;
+}
+.faq-item {
+    border-top:1px solid rgba(0,0,0, .1);
+    padding: 24px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    position: relative;
+}

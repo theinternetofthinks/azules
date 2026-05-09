@@ -1,0 +1,12 @@
+{
+  "name": "marcos/infoextras",
+  "description": "Banner superior para PrestaShop 9",
+  "type": "prestashop-module",
+  "license": "AFL-3.0",
+  "autoload": {
+    "classmap": ["infoextras.php"]
+  },
+  "extra": {
+    "legacy": true
+  }
+}
