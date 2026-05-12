@@ -85,6 +85,11 @@
     footer {
       border-top: 1px solid rgba(#6B7480, .4);
     }
+    @media (min-width: 1200px) {
+      footer .container {
+          width: 1440px;
+      }
+    }
     .block_newsletter #block-newsletter-label,
     footer p {
       font-size: 14px;
