@@ -167,6 +167,11 @@
       font-weight: 900;
       text-transform: uppercase;
     }
+    @media (max-width: 767px) {
+      .footer-medium h3{
+          font-size: 12px;
+      }
+    }
     .footer-medium .col {
       width: 100%;
      }
