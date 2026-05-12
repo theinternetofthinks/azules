@@ -23,10 +23,10 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
 
-<div class="block_newsletter col-lg-8 col-md-12 col-sm-12" id="blockEmailSubscription_{$hookName}">
+<div class="block_newsletter" id="blockEmailSubscription_{$hookName}">
   <div class="row">
-    <p id="block-newsletter-label" class="col-md-5 col-xs-12">{l s='Get our latest news and special sales' d='Shop.Theme.Global'}</p>
-    <div class="col-md-7 col-xs-12">
+    <p id="block-newsletter-label">{l s='Get our latest news and special sales' d='Shop.Theme.Global'}</p>
+    <div>
       <form action="{$urls.current_url}#blockEmailSubscription_{$hookName}" method="post">
         <div class="row">
           <div class="col-xs-12">
@@ -75,3 +75,16 @@
     </div>
   </div>
 </div>
+
+
+<style>
+
+.block_newsletter form .row .col-xs-12:first-of-type .btn-primary:first-of-type {
+  margin-left: 0;
+}
+.block_newsletter .col-xs-12,
+.block_newsletter .row {
+  margin: 0;
+  padding: 0;
+}
+</style>

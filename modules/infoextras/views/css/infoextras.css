@@ -3,7 +3,13 @@
 }
 .infoextras-banner ul{
     display: flex;
+    flex-direction: column;
     gap: 32px;
+}
+@media (min-width: 768px) {
+   .infoextras-banner ul{
+    flex-direction: row;
+   } 
 }
 .infoextras-banner li {
     display: flex;
@@ -14,6 +20,7 @@
     text-align: center;
     width: 100%;
 }
+
 .infoextras-banner li span {
     border-radius: 50%;
     background: #fff;

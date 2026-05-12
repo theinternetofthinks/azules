@@ -10,7 +10,7 @@
     transition: max-height .3s ease;
 }
 .faq-item h3 {
-    width: 100%;
+    width: 95%;
     cursor: pointer;
     font-family: 'Inter', sans-serif;
     margin-bottom: 0;

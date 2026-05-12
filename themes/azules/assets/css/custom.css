@@ -107,7 +107,13 @@ a:hover {
 #content-wrapper .container {
   max-width: 1440px;
   margin: auto;
-  padding: 96px 64px;
+  padding: 48px 12px;
+}
+@media (min-width: 768px) {
+  #content-wrapper .inner-container,
+  #content-wrapper .container {
+    padding: 96px 64px;
+  } 
 }
 .page-index #content-wrapper .container {
   max-width: initial;
@@ -155,6 +161,30 @@ a:hover {
     font-weight: 300!important;
     text-transform: none !important;
 }
+
+@media (max-width: 768px) {
+
+  .carousel .carousel-item .caption {
+      position: relative;
+      bottom: auto;
+      left: auto;
+      max-width: auto;
+      color: #fff;
+      top: auto;
+      margin: auto;
+      display: block;
+      height: auto;
+      padding: 16px 0;
+  }
+  .carousel .carousel-item .caption h2{
+      font-size: 32px!important;
+  }
+  .carousel .carousel-item .caption .caption-description .page-content.page-cms ul, .carousel .carousel-item .caption .caption-description p, .page-content.page-cms .carousel .carousel-item .caption .caption-description ul {
+    font-size: 14px;
+  }
+}
+
+
 /* notificaciones */
 .notifications-container.container {
     padding: 0;
@@ -167,6 +197,12 @@ a:hover {
     display: flex;
     gap: 8px;
 
+}
+
+.d-grid,
+.display-grid {
+    display: grid;
+    gap: 8px;
 }
 
 .header-component {

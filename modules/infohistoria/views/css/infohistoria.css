@@ -7,6 +7,12 @@
     display: flex;
     padding: 96px 64px;
     gap: 8px;  
+    flex-direction: column;
+}
+@media (min-width: 768px) {
+    .infohistoria-banner .inner-container {
+        flex-direction: row;
+   } 
 }
 .infohistoria-banner .col {
     width: 100%;
