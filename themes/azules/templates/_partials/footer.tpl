@@ -164,6 +164,8 @@
     .footer-medium h3{
       font-size: 14px;
       font-family: 'Inter', sans-serif;
+      font-weight: 900;
+      text-transform: uppercase;
     }
     .footer-medium .col {
       width: 100%;
