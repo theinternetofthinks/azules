@@ -18,11 +18,11 @@
 
 .infosectores-banner .display-grid {
     display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Móvil: 3 + 3 */
+    grid-template-columns: repeat(2, 1fr); 
 }
 
 @media (min-width: 768px) {
   .infosectores-banner .display-grid {
-    grid-template-columns: repeat(1, 1fr); /* Escritorio: 1 columna de 6 */
+    grid-template-columns: repeat(3, 1fr);
   }
 }

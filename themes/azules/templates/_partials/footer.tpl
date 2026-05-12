@@ -47,14 +47,35 @@
       
     </div>
   </div>
+  <div class="footer-medium">
+      <div class="col">
+        <ul>
+          <li>Azules de Vergara S.L. <br />CIF: B/28279842. <br /> C/ Jordán 4 | azules@azulesdevergara.com</li>
+          <li>Inscrita, en el Registro Mercantil de Madrid, Tomo 2912, libro 0, folio 85, sección 8, hoja M-49971 B/28279842</li>
+        </ul>
+      </div>
+      <div class="col">
+        <img src="{$urls.theme_assets}img/financiacion-industria.png" class="img-industria" alt="Financiado por el Ministerio de Industria">
+      </div>
+      <div class="col">
+          <h3 class="caps">Formas de pago</h3>
+          <ul class="payment-methods">
+            <li></li>
+          <ul>
+      </div>
 
+  </div>
   <div class="footer-bottom">
     {block name='copyright_link'}
       <a href="https://www.prestashop-project.org/" target="_blank" rel="noopener noreferrer nofollow">
-        {l s='%copyright% %year% - Ecommerce software by %prestashop%' sprintf=['%prestashop%' => 'PrestaShop™', '%year%' => 'Y'|date, '%copyright%' => '©'] d='Shop.Theme.Global'}
+        © 2026 Azules de Vergara. Todos los derechos reservados.
       </a>
     {/block}
-
+    <ul>
+      <li><a href="">Aviso Legal</a></li>
+      <li><a href="">Privacidad</a></li>
+      <li><a href="">Cookies</a></li>
+    </ul>
   </div>
 
 </div>
@@ -115,16 +136,58 @@
     .footer-top p.h3 {
        color: #0B1B2B;;
     }
-     @media (max-width: 767px) {
+    .footer-bottom {
+      display: flex;
+      border-top: 1px solid rgba(0, 0, 0, .1);
+      justify-content: space-between;
+      padding: 12px 0;
+    }
+    .footer-bottom a {
+     font-size: 14px;
+     text-decoration: none;
+    }
+    .footer-bottom ul{
+      display: flex;
+      gap: 8px;
+    }   
+    .img-industria {
+      max-width: 300px;
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: auto;
+    }
+    .footer-medium {
+      display: flex;
+      font-size: 14px;
+    }
+    .footer-medium h3{
+      font-size: 14px;
+      font-family: 'Inter', sans-serif;
+    }
+    .footer-medium .col {
+      width: 100%;
+     }
+    .footer-medium li {
+      margin-bottom: 16px;
+    }
+
+    @media (max-width: 767px) {
+      .footer-medium {
+        flex-direction: column;
+      }
       .footer-top .col-md-6.wrapper {
         padding: 0;
       }
-       .footer-top span.h3 {
+      .footer-top span.h3 {
         font-size: 12px;
-       }
+      }
       .footer-top .wrapper,
       .footer-top .links .title {
         padding: .625rem 0;
+      }
+      .footer-bottom {
+        flex-direction: column;
       }
     }
 
