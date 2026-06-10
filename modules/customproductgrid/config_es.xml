@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+    <name>customproductgrid</name>
+    <displayName><![CDATA[Grid de Im&aacute;genes de Producto para Creative Elements]]></displayName>
+    <version><![CDATA[1.0.0]]></version>
+    <description><![CDATA[Muestra las im&aacute;genes del producto en un grid vertical continuo sin miniaturas.]]></description>
+    <author><![CDATA[ME]]></author>
+    <tab><![CDATA[front_office_features]]></tab>
+    <is_configurable>0</is_configurable>
+    <need_instance>0</need_instance>
+</module>

@@ -59,7 +59,11 @@
               {include file='catalog/_partials/product-flags.tpl'}
 
               {block name='product_cover_thumbnails'}
-                {include file='catalog/_partials/product-cover-thumbnails.tpl'}
+                {* Comentamos la galería antigua para que no se muestre *}
+                {* {include file='catalog/_partials/product-cover-thumbnails.tpl'} *}
+
+                {* Llamamos a nuestro módulo a medida *}
+                {hook h='displayCustomProductGrid'}
               {/block}
               <div class="scroll-box-arrows">
                 <i class="material-icons left">&#xE314;</i>
@@ -79,7 +83,10 @@
           {block name='product_prices'}
             {include file='catalog/_partials/product-prices.tpl'}
           {/block}
-
+          <div class="filters">
+              Filtros
+              {hook h='displayCustomProductAttributes'}
+          </div>
           <div class="product-information">
             {block name='product_description_short'}
               <div id="product-description-short-{$product.id}" class="product-description">{$product.description_short nofilter}</div>

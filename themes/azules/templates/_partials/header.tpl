@@ -22,10 +22,11 @@
  * @copyright Since 2007 PrestaShop SA and Contributors
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  *}
+<div class="header-banner">
+  {hook h='displayBanner'}
+</div>
 {block name='header_banner'}
-  <div class="header-banner">
-    {hook h='displayBanner'}
-  </div>
+
 {/block}
 
 {block name='header_nav'}
@@ -48,29 +49,33 @@
 
 {block name='header_top'}
   <div class="header-top">
-    <div class="container">
-       <div class="row">
-        <div class="col-md-2 hidden-sm-down" id="_desktop_logo">
-          {if $shop.logo_details}
-            {if $page.page_name == 'index'}
-              <h1>
-                {renderLogo}
-              </h1>
-            {else}
-              {renderLogo}
-            {/if}
-          {/if}
-        </div>
-        <div class="header-top-right col-md-10 col-sm-12 position-static">
-          <div class="menu-wrapper">
-            {hook h='displayTop'}
-            <div class="user-nav">
-                {hook h='displayNav1'}{hook h='displayNav2'}
-            </div>
-          </div>
+
+    <div class="hamburger-menu js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+     <div id="_desktop_logo">
+       {if $shop.logo_details}
+         {if $page.page_name == 'index'}
+           <h1>
+             {renderLogo}
+           </h1>
+         {else}
+           {renderLogo}
+         {/if}
+       {/if}
+     </div>
+
+    <div class="menu-wrapper">
+        <div class="user-nav">
+            {hook h='displayNav1'}{hook h='displayNav2'}
         </div>
       </div>
-      <div id="mobile_top_menu_wrapper" class="row hidden-md-up" style="display:none;">
+
+       
+      <div id="mobile_top_menu_wrapper">
         <div class="js-top-menu mobile" id="_mobile_top_menu"></div>
         <div class="js-top-menu-bottom">
           <div id="_mobile_currency_selector"></div>
@@ -78,7 +83,10 @@
           <div id="_mobile_contact_link"></div>
         </div>
       </div>
-    </div>
   </div>
+  
+  {hook h='displayTop'}
   {hook h='displayNavFullWidth'}
+
+
 {/block}
